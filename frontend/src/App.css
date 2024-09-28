@@ -1,0 +1,284 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #0066ff;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+
+h2 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.wallet-info {
+  text-align: center;
+  background-color: #eef5ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #cce0ff;
+}
+
+.wallet-info h2 {
+  font-size: 18px;
+  color: #0056e0;
+} */
+ 
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1, h2 {
+  /* color: #333; */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header {
+  background-color: rgba(159, 3, 125, 0.3);
+  color: white;
+  height: 100px;
+  width: 100%;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  top: 0;
+  overflow: hidden;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #e0cce0;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  transition: color 0.4s ease;
+}
+
+.button-wl {
+  width: 100%;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-wl:hover {
+  background-color: #0056e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-btn {
+  background-color: #990297;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  margin-top: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(248, 2, 244, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(254, 47, 254, 0.4);
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: bubbleUp 10s infinite;
+}
+
+.bubble:nth-child(1) {
+  left: 10%;
+  animation-duration: 12s;
+  width: 60px;
+  height: 60px;
+}
+
+.bubble:nth-child(2) {
+  left: 20%;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(3) {
+  left: 35%;
+  animation-duration: 10s;
+  width: 80px;
+  height: 80px;
+}
+
+.bubble:nth-child(4) {
+  left: 50%;
+  animation-duration: 11s;
+}
+
+.bubble:nth-child(5) {
+  left: 70%;
+  animation-duration: 9s;
+}
+
+@keyframes bubbleUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-110vh);
+  }
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.wallet-info {
+  text-align: center;
+  background-color: #eef5ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #cce0ff;
+}
+
+.wallet-info h2 {
+  font-size: 18px;
+  color: #0056e0;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #0066ff;
+}

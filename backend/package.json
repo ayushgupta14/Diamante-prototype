@@ -1,0 +1,19 @@
+{
+  "name": "diamante-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "diamante-sdk-js": "^1.0.3",
+    "diamnet-sdk": "^1.0.2",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  }
+}

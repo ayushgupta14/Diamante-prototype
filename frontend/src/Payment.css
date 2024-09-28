@@ -1,0 +1,93 @@
+/* Payments.css */
+
+/* Import Google Fonts for modern look */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* Center the whole container with padding */
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Headers styles */
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input field styles */
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Buttons with hover effect */
+button {
+  width: 100%;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Payment message styling */
+p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #0066ff;
+}
+
+/* Section styling for better layout */
+section {
+  margin-bottom: 40px;
+}
+
+/* Section title */
+h2 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Wallet info box */
+.wallet-info {
+  text-align: center;
+  background-color: #eef5ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #cce0ff;
+}
+
+.wallet-info h2 {
+  font-size: 18px;
+  color: #0056e0;
+}
